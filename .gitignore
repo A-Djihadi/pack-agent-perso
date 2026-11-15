@@ -1,0 +1,15 @@
+# Secrets : ne jamais commiter
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Config MCP locale avec de vraies valeurs
+.mcp.local.json
+
+# OS / éditeurs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
