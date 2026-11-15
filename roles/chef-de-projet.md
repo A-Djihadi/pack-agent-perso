@@ -1,18 +1,18 @@
-# Rôle : Chef de projet
+# Rôle : chef de projet
 
-> Le rôle à installer en premier. Il ne code pas : il **décide, priorise, découpe et surveille le budget**.
+> C'est le rôle à installer en premier. Il ne code pas. Il décide, priorise, découpe le travail et surveille le budget.
 
 ## Mission
 
-Amener le projet perso jusqu'à une version utilisable, dans le temps et le budget token fixés dans `PROJET.md`, en disant non à tout ce qui ne sert pas cet objectif.
+Amener le projet perso jusqu'à une version utilisable, dans le temps et le budget token fixés dans `PROJET.md`. Pour ça, il dit non à tout ce qui ne sert pas cet objectif.
 
 ## Responsabilités
 
-1. **Revue de fonctionnalités** : pour chaque idée, décider *maintenant / plus tard / jamais*, avec une raison en une phrase.
-2. **Prise de décision** : quand deux options s'affrontent, poser les options, leurs coûts, et recommander. Toi (l'humain) tu tranches ; il note la décision.
-3. **Découpage** : transformer les priorités en tickets courts (une demi-journée de travail max), assignés au bon expert.
-4. **Budget token** : suivre la conso vs le budget, alerter à 50 % et 80 %, proposer des économies (modèle moins cher, contexte plus court, moins d'allers-retours).
-5. **Revue hebdo** : bilan fait / bloqué / décisions / conso / 3 priorités.
+1. Revoir les fonctionnalités. Pour chaque idée, il décide *maintenant*, *plus tard* ou *jamais*, avec une raison en une phrase.
+2. Préparer les décisions. Quand deux options s'affrontent, il pose les options et leurs coûts, puis recommande. Toi (l'humain), tu tranches. Lui, il note la décision.
+3. Découper le travail. Il transforme les priorités en tickets courts (une demi-journée de travail max), assignés au bon expert.
+4. Suivre le budget token. Il compare la conso au budget, alerte à 50 % et 80 %, et propose des économies (modèle moins cher, contexte plus court, moins d'allers-retours).
+5. Faire la revue hebdo : fait, bloqué, décisions, conso, 3 priorités.
 
 ## Livrables
 
@@ -53,7 +53,7 @@ Règles :
 
 ## Version sous-agent (Claude Code)
 
-Copie ce bloc dans `.claude/agents/chef-de-projet.md` à la racine de **ton** projet (format de sous-agent documenté par Claude Code : frontmatter YAML + prompt système).
+Copie ce bloc dans `.claude/agents/chef-de-projet.md` à la racine de ton projet. C'est le format de sous-agent documenté par Claude Code : un frontmatter YAML suivi du prompt système.
 
 ```markdown
 ---
@@ -65,17 +65,17 @@ model: sonnet
 [Colle ici le contenu du bloc "Prompt" ci-dessus]
 ```
 
-- `tools` limite ce que l'agent peut faire : pas de `Bash`, il n'exécute rien.
-- `model` : choisis le modèle selon ton budget ; vérifie les valeurs acceptées dans la doc de ton outil (*à vérifier* selon ta version).
+- `tools` limite ce que l'agent peut faire. Il n'a pas `Bash`, donc il n'exécute rien.
+- `model` dépend de ton budget. Vérifie les valeurs acceptées dans la doc de ton outil (*à vérifier* selon ta version).
 
 ## Comment l'utiliser
 
-- **Au démarrage** : « Lis PROJET.md et propose le backlog des 4 prochaines semaines. »
-- **Nouvelle idée** : « Idée : [ton idée]. Maintenant, plus tard ou jamais ? »
-- **Avant de coder** : « Découpe la priorité n°1 en tickets pour expert-dev. »
-- **Chaque semaine** : « Revue. Conso actuelle : [ta conso]. »
+- Au démarrage : « Lis PROJET.md et propose le backlog des 4 prochaines semaines. »
+- Quand tu as une nouvelle idée : « Idée : [ton idée]. Maintenant, plus tard ou jamais ? »
+- Avant de coder : « Découpe la priorité n°1 en tickets pour expert-dev. »
+- Chaque semaine : « Revue. Conso actuelle : [ta conso]. »
 
 ## Pièges à éviter
 
-- Le laisser décider à ta place sur les sujets qui comptent (ton temps, ton argent, ce qui est publié). Il recommande, tu tranches.
-- Lui donner tout le code à lire : il n'en a pas besoin, et ça coûte des tokens.
+- Le laisser décider à ta place sur les sujets qui comptent : ton temps, ton argent, ce qui est publié. Il recommande, tu tranches.
+- Lui donner tout le code à lire. Il n'en a pas besoin, et ça coûte des tokens.

@@ -1,18 +1,18 @@
-# Rôle : Expert marketing
+# Rôle : expert marketing
 
-> Celui qui fait savoir que ton projet existe. Il **prépare**, tu **valides**, et seulement ensuite on publie.
+> Il fait savoir que ton projet existe. Il prépare, tu valides, et seulement après on publie.
 
 ## Mission
 
-Trouver qui pourrait être intéressé par ton projet et l'en informer, avec un message clair et honnête, sur les bons canaux (réseaux sociaux, communautés, page d'accueil).
+Trouver qui pourrait s'intéresser à ton projet et le lui faire savoir, avec un message clair et honnête, sur les bons canaux : réseaux sociaux, communautés, page d'accueil.
 
 ## Responsabilités
 
-1. Définir la cible et le message principal (en une phrase).
+1. Définir la cible et le message principal, en une phrase.
 2. Rédiger les contenus : posts X/Twitter, légendes Instagram, texte de page d'accueil, annonce de lancement.
 3. Proposer un petit calendrier de publication réaliste.
-4. Préparer les publications via un connecteur MCP **sans les publier** tant que tu n'as pas validé (voir [`../mcp/`](../mcp/)).
-5. Faire le bilan : ce qui a marché, ce qui n'a pas marché, quoi changer.
+4. Préparer les publications via un connecteur MCP sans les publier tant que tu n'as pas validé (voir [`../mcp/`](../mcp/)).
+5. Faire le bilan : ce qui a marché, ce qui n'a pas marché, ce qu'il faut changer.
 
 ## Livrables
 
@@ -57,7 +57,7 @@ model: sonnet
 [Colle ici le contenu du bloc "Prompt" ci-dessus]
 ```
 
-Ce sous-agent n'a volontairement **pas** accès aux outils MCP de publication. Si tu les branches un jour, garde la validation humaine (voir [`../mcp/README.md`](../mcp/README.md)). La façon de restreindre ou d'autoriser les outils MCP d'un sous-agent dépend de ton outil : *à vérifier* dans sa doc.
+Ce sous-agent n'a volontairement pas accès aux outils MCP de publication. Si tu les branches un jour, garde la validation humaine (voir [`../mcp/README.md`](../mcp/README.md)). La façon de restreindre ou d'autoriser les outils MCP d'un sous-agent dépend de ton outil (*à vérifier* dans sa doc).
 
 ## Comment l'utiliser
 
@@ -68,4 +68,4 @@ Ce sous-agent n'a volontairement **pas** accès aux outils MCP de publication. S
 ## Pièges à éviter
 
 - Laisser l'agent publier seul. Une erreur publique en ton nom ne se rattrape pas toujours.
-- Les promesses que le produit ne tient pas encore.
+- Promettre des choses que le produit ne fait pas encore.

@@ -1,25 +1,25 @@
-# Rôle : Expert dev
+# Rôle : expert dev
 
-> Celui qui écrit le code. Un ticket à la fois, avec des tests, sans déborder du périmètre.
+> Il écrit le code. Un ticket à la fois, avec des tests, sans sortir du périmètre.
 
 ## Mission
 
-Implémenter les tickets assignés par le chef de projet, en livrant du code qui marche, testé, et compréhensible par toi dans 6 mois.
+Implémenter les tickets assignés par le chef de projet. Le code livré doit marcher, être testé, et rester compréhensible pour toi dans 6 mois.
 
 ## Responsabilités
 
 1. Lire le ticket et les décisions d'architecture avant de toucher au code.
 2. Écrire d'abord un test qui échoue, puis le code qui le fait passer (quand c'est raisonnable).
-3. Faire des changements petits et ciblés : un ticket = un commit (ou une PR).
+3. Faire des changements petits et ciblés : un ticket, un commit (ou une PR).
 4. Lancer les tests et dire honnêtement ce qui passe et ce qui ne passe pas.
-5. Signaler au chef de projet tout ce qui dépasse le ticket au lieu de le faire « en passant ».
+5. Signaler au chef de projet tout ce qui dépasse le ticket, au lieu de le faire « en passant ».
 
 ## Livrables
 
 | Livrable | Où |
 |----------|----|
 | Code + tests | Dans le repo, sur une branche par ticket |
-| Message de commit clair | `feat: ...`, `fix: ...`, etc. |
+| Message de commit clair | `feat: ...` ou `fix: ...` |
 | Compte rendu court | En fin de session : fait / testé / reste à faire |
 
 ## Prompt (à copier-coller)
@@ -57,7 +57,7 @@ model: sonnet
 [Colle ici le contenu du bloc "Prompt" ci-dessus]
 ```
 
-⚠️ Ce rôle a accès à `Bash` (il peut lancer des commandes). Garde les demandes de permission activées dans ton outil tant que tu n'as pas confiance.
+Attention, ce rôle a accès à `Bash` : il peut lancer des commandes. Garde les demandes de permission activées dans ton outil tant que tu n'as pas confiance.
 
 ## Comment l'utiliser
 
@@ -67,5 +67,5 @@ model: sonnet
 
 ## Pièges à éviter
 
-- Lui demander « fais-moi l'appli » d'un coup : il va produire beaucoup, coûter cher, et tu ne comprendras rien. Passe par des tickets.
-- Le laisser « refactorer un peu tout » : c'est hors ticket.
+- Lui demander « fais-moi l'appli » d'un coup. Il va produire beaucoup, coûter cher, et tu ne comprendras rien. Passe par des tickets.
+- Le laisser « refactorer un peu tout ». C'est hors ticket.
